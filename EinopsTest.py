@@ -27,6 +27,8 @@ def main():
     print(C5)
     C6 = torch.einsum('ij, ij -> ij', A, B) # element wise product
     print(C6)
+    C6b = torch.einsum('ij, ij -> ', A, B) # element wise product THEN ADD ALL
+    print(C6b)
     C7 = torch.einsum('ij, ij, ij -> ij', A, A, A) # cube elements
     print(C7)
     C8 = torch.einsum('ij -> ji', A)
