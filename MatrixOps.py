@@ -29,6 +29,7 @@ def main():
     res = torch.matmul(tensor1, tensor2)
     print(res.shape)
     
+    
 if __name__ == "__main__":
     sys.exit(int(main() or 0))
 
